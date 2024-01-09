@@ -31,4 +31,10 @@ func main() {
 	fmt.Println(items)
 
 	fmt.Println(sort.IntsAreSorted(items))
+
+	index := 4
+
+	items = append(items[:index], items[index+1:]...)
+
+	fmt.Println(items)
 }
